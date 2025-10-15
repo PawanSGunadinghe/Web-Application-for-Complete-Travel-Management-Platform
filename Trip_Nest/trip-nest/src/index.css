@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@media print {
+    @page {
+        size: A4;
+        margin: 14mm; /* tighter than default browser margins */
+    }
+    html, body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
